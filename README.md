@@ -4,7 +4,8 @@ My version of the infamous YouAreAnIdiot website
 # Links
 The below links only work if you access it through here:
 - https://anonymous1212144.github.io/YouAreAnIdiot/
-There are two standalone pages here:
+
+There are two pages here:
 - [Main page](idiot.html)
 - [Silent version](idiot_silent.html)
 
