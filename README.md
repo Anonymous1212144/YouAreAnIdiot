@@ -18,6 +18,6 @@ This is not an attempt at cloning that website. That has been done many times by
 
 To run the main version you need to get the browser to allow music to play even without user interaction. This can be done in Chromium browsers using something like:
 
-`chrome --autoplay-policy=no-user-gesture-required`.
+`chrome --autoplay-policy=no-user-gesture-required`
 
 There is a blog about this here: https://goo.gl/xX8pDD
