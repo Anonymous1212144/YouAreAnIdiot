@@ -1,5 +1,23 @@
 # YouAreAnIdiot
 My version of the infamous YouAreAnIdiot website
 
-Ok so I have a few html files I want like a separate domain/page.html for, idk if this is possible because I think it's a bit stupid to have to create a separate repository for what would be very minor differences. So here is my attempt which I have no idea if it would work:
+# Links
+There are two standalone pages here:
 - [Main page](idiot.html)
+- [Silent version](idiot_silent.html)
+
+# More information
+To share this website, just go into the page where all the things happen and copy that link. If you copy the link of this page they will also just see this page, ruining the suprise lol
+
+This is not an attempt at cloning that website. That has been done many times by many people. This is my interpretation of the website, but with quite a few changes from the original. These includes:
+- Changes to how the cloning happens, when it happens, what triggers it, and how the windows behave
+- Page will tell you to allow a few things it needs to run properly, otherwise it won't load (so you would actually be an idiot lol)
+- The visual is swapped with a SVG with some minor modifications like making the ☺ symmetrical
+- All data and everything needed to load the pages are in a single html file, including style, javascript, visual, audio, etc.
+- The clones are now an exact clone, so allowing popup on the main page allows it on all the clones lol
+
+To run the main version you need to get the browser to allow music to play even without user interaction. This can be done in Chromium browsers using something like:
+
+`chrome --autoplay-policy=no-user-gesture-required`.
+
+There is a blog about this here: https://goo.gl/xX8pDD
