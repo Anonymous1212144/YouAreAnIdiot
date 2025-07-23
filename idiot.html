@@ -118,7 +118,7 @@
             if (Math.random() < 0.5) dy *= -1;
             bounce(3);
         } else {
-            const popup = open();
+            const popup = open('', '', size_str);
             if (!popup) alert('Please reload with popups unblocked');
             else {
                 popup.close();
