@@ -5,10 +5,12 @@
     <title>Are you an idiot?</title>
     <link rel="manifest" href="manifest.json">
     <script>
-        addEventListener('pageshow', () => {
+        const check = () => {
             if (matchMedia('(display-mode: standalone)').matches) location.href = 'idiot.html';
-            else alert('Please install the app. It should show up on the address bar within 30 seconds. If not, try reloading the page.');
-        });
+            setTimeout(check, 1000);
+        }
+        check();
+        alert('Please install the app. It should show up on the address bar within 30 seconds. If not, try reloading the page.');
     </script>
 </head>
 
