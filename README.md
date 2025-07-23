@@ -7,7 +7,9 @@ The below links only work if you access it through here:
 
 There are two pages here:
 - [Main page](idiot.html)
+- [App version](idiot_app.html)
 - [Silent version](idiot_silent.html)
+
 
 # More information
 To share this website, just go into the page where all the things happen and copy that link. If you copy the link of this page they will also just see this page, ruining the suprise lol
@@ -18,6 +20,8 @@ This is not an attempt at cloning that website. That has been done many times by
 - The visual is swapped with a SVG with some minor modifications like making the ☺ symmetrical
 - All data and everything needed to load the pages are in a single html file, including style, javascript, visual, audio, etc.
 - The clones are now an exact clone, so allowing popup on the main page allows it on all the clones lol
+
+To run the app version, you need to e.g. for Chromium browsers, click the "install" button when it shows up on the address bar
 
 To run the main version you need to get the browser to allow music to play even without user interaction. This can be done in Chromium browsers using something like:
 
