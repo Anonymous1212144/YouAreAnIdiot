@@ -12,6 +12,6 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/YouAreAnIdiot/idiot_app.html",
+  "start_url": "/YouAreAnIdiot/idiot.html",
   "display": "standalone"
 }
