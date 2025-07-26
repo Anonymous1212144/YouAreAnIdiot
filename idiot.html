@@ -80,7 +80,7 @@
                 yPos = reflect(yPos, height);
                 b |= 2;
             }
-            if ((b & 1 ^ (b >> 1)) && Math.random() < 0.25) open(location.href, '', `${size_str},top=${yPos},left=${xPos}`);
+            if ((b & 1 ^ (b >> 1)) && Math.random() < 0.2) open(location.href, '', `${size_str},top=${yPos},left=${xPos}`);
             moveTo(xPos, yPos);
             setTimeout(bounce, 1, 0);
         }
