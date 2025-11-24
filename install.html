@@ -6,7 +6,11 @@
     <link rel="manifest" href="manifest.json">
     <script>
         setInterval(() => { if (matchMedia('(display-mode: standalone)').matches) location.href = 'idiot.html' }, 1000)
-        alert('Please install the app. It should show up on the address bar within 30 seconds. If not, try reloading the page.');
+        const audio = new Audio();
+        audio.src = 'data:audio/mpeg;base64,//MUxAAAAANIAAAAAExBTUUzLjEwMFVV//MUxAsAAANIAAAAAFVVVVVVVVVVVVVV//MUxBYAAANIAAAAAFVVVVVVVVVVVVVV';
+        audio.play().then(() => {
+            location.href = 'idiot.html';
+        }).catch(() => alert('Please install the app. It should show up on the address bar within 30 seconds. If not, try reloading the page.'));
     </script>
 </head>
 
