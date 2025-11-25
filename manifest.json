@@ -2,7 +2,7 @@
   "short_name": "Idiot",
   "icons": [
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjEyNSAyMTI1JyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxnIHN0cm9rZS13aWR0aD0nMTI1JyBzdHJva2U9J2JsYWNrJyBmaWxsPSd3aGl0ZSc+PGNpcmNsZSBjeD0nMTA2MicgY3k9JzEwNjInIHI9JzEwMDAnLz48cGF0aCBkPSdNMTcxMiAxMzQyIFExNjYyIDE0MjIgMTU5MiAxNDkyIDEzNzIgMTcxMiAxMDYyIDE3MTIgNzUyIDE3MTIgNTMyIDE0OTIgNDYyIDE0MjIgNDEyIDEzNDInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcvPjwvZz48Y2lyY2xlIGN4PSc3ODcnIGN5PSc3MjcnIHI9JzE5NScvPjxjaXJjbGUgY3g9JzEzMzcnIGN5PSc3MjcnIHI9JzE5NScvPjwvc3ZnPg",
+      "src": "data:image/svg+xml,%3Csvg%20viewBox='0,0,2125,2125'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20style='stroke-width:125;stroke:black;fill:white'%3E%3Ccircle%20style='cx:1062;cy:1062;r:1000'/%3E%3Cpath%20d='M1712,1342Q1662,1422,1592,1492,1372,1712,1062,1712,752,1712,532,1492,462,1422,412,1342'%20stroke-linecap='round'/%3E%3C/g%3E%3Ccircle%20style='cx:787;cy:727;r:195'/%3E%3Ccircle%20style='cx:1337;cy:727;r:195'/%3E%3C/svg%3E",
       "type": "image/svg+xml",
       "sizes": "any"
     }
@@ -10,7 +10,3 @@
   "start_url": "/YouAreAnIdiot/idiot.html",
   "display": "standalone"
 }
-
-
-
-
