@@ -95,11 +95,12 @@
             document.title = 'You are an idiot!';
         }
 
-        const loop = () => {
-            audio.play().then(() => {
+        const loop = (i) => {
+            if (matchMedia('(display-mode: standalone)').matches) {
+                clearInterval(i);
                 init();
                 setTimeout(open, 5000, location.href, '', size_str);
-            }).catch(() => setTimeout(loop, 1000));
+            }
         }
 
         onbeforeunload = function () {
@@ -136,7 +137,7 @@
                     setTimeout(open, 5000, location.href, '', size_str);
                 }).catch(() => {
                     alert('Please install the app. It should show up on the address bar within 30 seconds. If not, try reloading the page.');
-                    setTimeout(loop, 1000);
+                    const i = setInterval(() => loop(i), 1000);
                 });
             }
         };
@@ -144,4 +145,5 @@
 </body>
 
 </html>
+
 
