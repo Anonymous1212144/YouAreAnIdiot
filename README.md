@@ -2,7 +2,7 @@
 My version of the infamous YouAreAnIdiot website
 
 # More information
-Here it is: https://anonymous1212144.github.io/YouAreAnIdiot/idiot.html
+Here it is: https://anonymous1212144.github.io/YouAreAnIdiot/
 
 This is not an attempt at cloning that website. That has been done many times by many people. This is my interpretation of the website, but with quite a few changes from the original. These includes:
 - Changes to how the cloning happens, when it happens, what triggers it, and how the windows behave
