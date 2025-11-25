@@ -3,7 +3,10 @@
 
 <head>
     <title>Are you an idiot?</title>
-    <link rel='icon' href="data:image/svg+xml,%3Csvg%20viewBox='0,0,2125,2125'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20style='stroke-width:125;stroke:black;fill:white'%3E%3Ccircle%20style='cx:1062;cy:1062;r:1000'/%3E%3Cpath%20d='M1712,1342Q1662,1422,1592,1492,1372,1712,1062,1712,752,1712,532,1492,462,1422,412,1342'%20stroke-linecap='round'/%3E%3C/g%3E%3Ccircle%20style='cx:787;cy:727;r:195'/%3E%3Ccircle%20style='cx:1337;cy:727;r:195'/%3E%3C/svg%3E" />
+    <link rel='icon'
+        href="data:image/svg+xml,%3Csvg%20viewBox='0,0,2125,2125'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20style='stroke-width:125;stroke:black;fill:white'%3E%3Ccircle%20style='cx:1062;cy:1062;r:1000'/%3E%3Cpath%20d='M1712,1342Q1662,1422,1592,1492,1372,1712,1062,1712,752,1712,532,1492,462,1422,412,1342'%20stroke-linecap='round'/%3E%3C/g%3E%3Ccircle%20style='cx:787;cy:727;r:195'/%3E%3Ccircle%20style='cx:1337;cy:727;r:195'/%3E%3C/svg%3E" />
+    <link rel='manifest'
+        href="data:application/manifest+json,%7B%22name%22:%22Idiot%22,%22icons%22:[%7B%22src%22:%22data:image/svg+xml,%253Csvg%2520height='2125'%2520width='2125'%2520xmlns='http://www.w3.org/2000/svg'%253E%253Cg%2520style='stroke-width:125;stroke:black;fill:white'%253E%253Ccircle%2520style='cx:1062;cy:1062;r:1000'/%253E%253Cpath%2520d='M1712,1342Q1662,1422,1592,1492,1372,1712,1062,1712,752,1712,532,1492,462,1422,412,1342'%2520stroke-linecap='round'/%253E%253C/g%253E%253Ccircle%2520style='cx:787;cy:727;r:195'/%253E%253Ccircle%2520style='cx:1337;cy:727;r:195'/%253E%253C/svg%253E%22,%22type%22:%22image/svg+xml%22,%22sizes%22:%22any%22%7D],%22start_url%22:%22https://anonymous1212144.github.io/YouAreAnIdiot/idiot.html%22,%22display%22:%22standalone%22%7D" />
     <style>
         html,
         body,
@@ -22,14 +25,14 @@
             <path
                 d='M15938 11938 L62 11938 62 62 15938 62Z M4150 8130 Q4100 8210 4030 8280 3810 8500 3500 8500 3190 8500 2970 8280 2900 8210 2850 8130 M8650 8130 Q8600 8210 8530 8280 8310 8500 8000 8500 7690 8500 7470 8280 7400 8210 7350 8130 M13150 8130 Q13100 8210 13030 8280 12810 8500 12500 8500 12190 8500 11970 8280 11900 8210 11850 8130'
                 stroke-linecap='round' stroke-linejoin='round'>
-                <animate attributeName='fill' calcMode='discrete' dur='857ms' keyTimes='0;0.5'
-                    repeatCount='indefinite' values='white;black' />
+                <animate attributeName='fill' calcMode='discrete' dur='857ms' keyTimes='0;0.5' repeatCount='indefinite'
+                    values='white;black' />
             </path>
             <circle cx='3500' cy='7850' r='1000' />
             <circle cx='8000' cy='7850' r='1000' />
             <circle cx='12500' cy='7850' r='1000' />
-            <animate attributeName='stroke' calcMode='discrete' dur='857ms' keyTimes='0;0.5'
-                repeatCount='indefinite' values='black;white' />
+            <animate attributeName='stroke' calcMode='discrete' dur='857ms' keyTimes='0;0.5' repeatCount='indefinite'
+                values='black;white' />
         </g>
         <g stroke='white'>
             <circle cx='3225' cy='7515' r='195' />
@@ -92,6 +95,13 @@
             document.title = 'You are an idiot!';
         }
 
+        const loop = () => {
+            audio.play().then(() => {
+                init();
+                setTimeout(open, 5000, location.href, '', size_str);
+            }).catch(() => setTimeout(loop, 1000));
+        }
+
         onbeforeunload = function () {
             if (valid_state) {
                 open(location.href, '', `${size_str},top=${yPos},left=${xPos}`);
@@ -124,12 +134,13 @@
                 audio.play().then(() => {
                     init();
                     setTimeout(open, 5000, location.href, '', size_str);
-                }).catch(() => alert('Please reload with audio autoplay enabled. E.g. https://goo.gl/xX8pDD'));
+                }).catch(() => {
+                    alert('Please install the app. It should show up on the address bar within 30 seconds. If not, try reloading the page.');
+                    setTimeout(loop, 1000);
+                });
             }
-        }
+        };
     </script>
 </body>
 
 </html>
-
-
