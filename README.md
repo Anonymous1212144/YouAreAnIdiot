@@ -1,11 +1,8 @@
 # YouAreAnIdiot
 My version of the infamous YouAreAnIdiot website
 
-# Links
-The below links only work if you access it through [here](https://anonymous1212144.github.io/YouAreAnIdiot/).
-
 # More information
-To share this website, just go into [app version entry](entry.html) and copy the link. If you copy the link of this page they will also just see this page, ruining the suprise lol
+Here it is: https://anonymous1212144.github.io/YouAreAnIdiot/idiot.html
 
 This is not an attempt at cloning that website. That has been done many times by many people. This is my interpretation of the website, but with quite a few changes from the original. These includes:
 - Changes to how the cloning happens, when it happens, what triggers it, and how the windows behave
@@ -14,7 +11,7 @@ This is not an attempt at cloning that website. That has been done many times by
 - All data and everything needed to load the pages are in a single html file, including style, javascript, visual, audio, etc.
 - The clones are now an exact clone, so allowing popup on the main page allows it on all the clones lol
 
-To run the [main version](idiot.html) directly you need to get the browser to allow music to play even without user interaction. This can be done in Chromium browsers using something like:
+To run this directly without installing you may need to get the browser to allow music to play even without user interaction. This can be done in Chromium browsers using something like:
 
 `chrome --autoplay-policy=no-user-gesture-required`
 
