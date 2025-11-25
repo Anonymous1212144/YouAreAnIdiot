@@ -2,7 +2,7 @@
   "short_name": "Idiot",
   "icons": [
     {
-      "src": "data:image/svg+xml;utf8,<svg viewBox='0 0 2125 2125' xmlns='http://www.w3.org/2000/svg'><g stroke-width='125' stroke='black' fill='white'><circle cx='1062' cy='1062' r='1000'/><path d='M1712 1342 Q1662 1422 1592 1492 1372 1712 1062 1712 752 1712 532 1492 462 1422 412 1342' stroke-linecap='round'/></g><circle cx='787' cy='727' r='195'/><circle cx='1337' cy='727' r='195'/></svg>",
+      "src": "data:image/svg+xml,<svg viewBox='0 0 2125 2125' xmlns='http://www.w3.org/2000/svg'><g stroke-width='125' stroke='black' fill='white'><circle cx='1062' cy='1062' r='1000'/><path d='M1712 1342 Q1662 1422 1592 1492 1372 1712 1062 1712 752 1712 532 1492 462 1422 412 1342' stroke-linecap='round'/></g><circle cx='787' cy='727' r='195'/><circle cx='1337' cy='727' r='195'/></svg>",
       "type": "image/svg+xml",
       "sizes": "any"
     }
@@ -10,4 +10,5 @@
   "start_url": "/YouAreAnIdiot/idiot.html",
   "display": "standalone"
 }
+
 
