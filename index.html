@@ -98,6 +98,7 @@
         const loop = (i) => {
             if (matchMedia('(display-mode: standalone)').matches) {
                 clearInterval(i);
+                audio.play();
                 init();
                 setTimeout(open, 5000, location.href, '', size_str);
             }
@@ -145,5 +146,6 @@
 </body>
 
 </html>
+
 
 
